@@ -59,8 +59,8 @@ def water_sensor():
     return is_water
 
 def measure_dht():
-    # Read DHT22 sensor pin and returns an object with two useful methods
-    # One method reads temperature and the other humidity
+    # Read DHT22 sensor pin and returns an object with two useful properties
+    # The measure() method reads temperature and humidity
     dht22 = DHT22(machine.Pin(DHT22_PIN, machine.Pin.IN))
     dht22.measure()
     return dht22
